@@ -8,8 +8,8 @@
     <!--T´tiulo da aba de navegação-->
     <title>Quem somos</title>
     <!--Link da página de estilo CSS para estilizar a página HTML-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="subpages.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/subpages.css') }}">
 </head>
 <body>
     <!--Cabeçalho da página-->
@@ -17,16 +17,16 @@
         <!--Menu superior-->
         <nav>
             <div class="logo">
-                <a href="home.html">
-                <img src="imagens/logo.png" alt="logo" class="logo" width="150" height="150">
+                <a href="{{ url_for ('home.html') }}">
+                    <img src="{{'static', filename='imagens/logo.png' }}" alt="logo" class="logo" width="150" height="150">
                 </a>
             </div>
             <ul>
                 <!--Links de direcionamento para outras páginas-->
-                <li><a href="#"><img src="imagens/twitter.png" width="57" height="57"></a></li></li>
-                <li><a href="#"><img src="imagens/facebook.png" width="50" height="50"></a></li></li>
-                <li><a href="#"><img src="imagens/instagram.png" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
-                <li><a href="#"><img src="imagens/pinterest.png" width="54" height="54"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/twitter.png' }}" width="57" height="57"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/facebook.png' }}" width="50" height="50"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/instagram.png' }}" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
+                <li><a href="#"><img src="{{'static', filename='imagens/pinterest.png' }}" width="54" height="54"></a></li></li>
             </ul>
         </nav>
     </header>
@@ -34,10 +34,10 @@
     <div class="menu">
         <nav>
         <ul>
-            <a href="about.html">Quem somos</a>
+            <a href="{{ url_for ('sobre') }}">Quem somos</a>
             <a href="#contato">Contato</a>
-            <a href="login.html"><img src="imagens/login.png" width="27" height="27"></a>
-            <a href="#"><img src="imagens/compra.png" width="27" height="27"></a>
+            <a href="{{ url_for ('login') }}"><img src="{{'static', filename='imagens/login.png' }}" width="27" height="27"></a>
+            <a href="#"><img src="{{'static', filename='imagens/compra.png' }}" width="27" height="27"></a>
         </ul>
     </nav>
    </div>
