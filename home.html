@@ -8,8 +8,8 @@
     <!--T´tiulo da aba de navegação-->
     <title>A.c.M Discos</title>
     <!--Link da página de estilo CSS para estilizar a página HTML-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="subpages.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/subpages.css') }}">
 </head>
 <body>
     <!--Cabeçalho da página-->
@@ -17,16 +17,16 @@
         <!--Menu superior-->
         <nav>
             <div class="logo">
-                <a href="home.html">
-                <img src="imagens/logo.png" alt="logo" class="logo" width="150" height="150">
+                <a href="{{ url_for ('home') }}">
+                <img src="{{'static', filename='imagens/logo.png' }}" alt="logo" class="logo" width="150" height="150">
                 </a>
             </div>
             <ul>
                 <!--Links de direcionamento para outras páginas-->
-                <li><a href="#"><img src="imagens/twitter.png" width="57" height="57"></a></li></li>
-                <li><a href="#"><img src="imagens/facebook.png" width="50" height="50"></a></li></li>
-                <li><a href="#"><img src="imagens/instagram.png" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
-                <li><a href="#"><img src="imagens/pinterest.png" width="54" height="54"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/twitter.png' }}" width="57" height="57"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/facebook.png' }}" width="50" height="50"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/instagram.png' }}" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
+                <li><a href="#"><img src="{{'static', filename='imagens/pinterest.png' }}" width="54" height="54"></a></li></li>
             </ul>
         </nav>
     </header>
@@ -34,10 +34,10 @@
     <div class="menu">
         <nav>
         <ul>
-            <a href="about.html">Quem somos</a>
+            <a href="{{ url_for ('sobre') }}">Quem somos</a>
             <a href="#contato">Contato</a>
-            <a href="login.html"><img src="imagens/login.png" width="27" height="27"></a>
-            <a href="#"><img src="imagens/compra.png" width="27" height="27"></a>
+            <a href="{{ url_for ('login') }}"><img src="{{'static', filename='imagens/login.png' }}" width="27" height="27"></a>
+            <a href="#"><img src="{{'static', filename='imagens/compra.png' }}" width="27" height="27"></a>
         </ul>
     </nav>
    </div>
@@ -46,19 +46,19 @@
     
     <center><div class="principal">
         <a href="#ofertas">
-        <img src="imagens/ofertas.jpg" width="300" height="500">
+        <img src="{{'static', filename='imagens/ofertas.jpg' }}" width="300" height="500">
         </a>
     
         <a href="artistas.html">
-        <img src="imagens/artistas.jpg" width="300" height="500">
+        <img src="{{'static', filename='imagens/artistas.jpg' }}" width="300" height="500">
         </a>
     
         <a href="discos.html">
-        <img src="imagens/discos.jpg" width="300" height="500">
+        <img src="{{'static', filename='imagens/discos.jpg' }}" width="300" height="500">
         </a>
     
         <a href="#cadastrar">
-        <img src="imagens/cadastro.jpg" width="300" height="500">
+        <img src="{{'static', filename='imagens/cadastro.jpg' }}" width="300" height="500">
         </a>
         </div></center>
 
@@ -72,14 +72,14 @@
             <!--Lista dos produtos em oferta-->
             <div class="product-list">
                 <div class="product">
-                    <img src="imagens/album3.jpg" alt="Disco 1"><!--Imagem do produto 1-->
+                    <img src="{{'static', filename='imagens/album3.jpg' }}" alt="Disco 1"><!--Imagem do produto 1-->
                     <h2>My Dear Melancholy - The Weeknd</h2>
                     <p>R$ 59,99</p>
                     <br>
                     <button>Adicionar ao Carrinho</button><!--Botão para adicionar itens ao carrinho-->
                 </div>
                 <div class="product">
-                    <img src="imagens/album4.jpg" alt="Disco 2"><!--Imagem do produto 2-->
+                    <img src="{{'static', filename='imagens/album4.jpg' }}" alt="Disco 2"><!--Imagem do produto 2-->
                     <h2>Lost In Heaven - Chase Atlantic</h2>
                     <p>R$ 69,99</p>
                     <br>
@@ -116,7 +116,7 @@
                         </div>
                         <button type="submit" class="btn">Cadastrar</button>
                         <br>
-                        <a href="login.html">Já possui uma conta?</a>
+                        <a href="{{ url_for ('login') }}">Já possui uma conta?</a>
                     </form>
                 </div>
             </div>
