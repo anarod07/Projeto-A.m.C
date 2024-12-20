@@ -4,24 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todos os discos</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="subpages.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/subpages.css') }}">
 </head>
 <body>
     <header>
             <!--Menu superior-->
         <nav>
             <div class="logo">
-                <a href="home.html">
-                <img src="imagens/logo.png" alt="logo" class="logo" width="150" height="150">
+                <a href="{{ url_for ('home.html') }}">
+                    <img src="{{'static', filename='imagens/logo.png' }}" alt="logo" class="logo" width="150" height="150">
                 </a>
             </div>
             <ul>
                 <!--Links de direcionamento para outras páginas-->
-                <li><a href="#"><img src="imagens/twitter.png" width="57" height="57"></a></li></li>
-                <li><a href="#"><img src="imagens/facebook.png" width="50" height="50"></a></li></li>
-                <li><a href="#"><img src="imagens/instagram.png" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
-                <li><a href="#"><img src="imagens/pinterest.png" width="54" height="54"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/twitter.png' }}" width="57" height="57"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/facebook.png' }}" width="50" height="50"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/instagram.png' }}" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
+                <li><a href="#"><img src="{{'static', filename='imagens/pinterest.png' }}" width="54" height="54"></a></li></li>
             </ul>
         </nav>
     </header>
@@ -29,10 +29,10 @@
     <div class="menu">
         <nav>
         <ul>
-            <a href="about.html">Quem somos</a>
+            <a href="{{ url_for ('hsobre') }}">Quem somos</a>
             <a href="#contato">Contato</a>
-            <a href="login.html"><img src="imagens/login.png" width="27" height="27"></a>
-            <a href="carrinho.html"><img src="imagens/compra.png" width="27" height="27"></a>
+            <a href="{{ url_for ('login') }}"><img src="{{'static', filename='imagens/login.png' }}" width="27" height="27"></a>
+            <a href="#"><img src="{{'static', filename='imagens/compra.png' }}" width="27" height="27"></a>
         </ul>
     </nav>
    </div>
@@ -59,76 +59,76 @@
 
         <ul class="product-list">
             <li><div class="product">
-                <img src="imagens/album1.jpg" alt="Disco 1">
+                <img src="{{'static', filename='imagens/album1.jpg' }}" alt="Disco 1">
                 <h3>Take Me Back To Eden - Sleep Token</h3>
                 <p>R$ 89,90</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album2.png" alt="Disco 2">
+                <img src="{{'static', filename='imagens/album2.png' }}" alt="Disco 2">
                 <h3>Love At First Sting - Scorpions</h3>
                 <p>R$ 99,90</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album3.jpg" alt="Disco 3">
+                <img src="{{'static', filename='imagens/album3.jpg' }}" alt="Disco 3">
                 <h3>My Dear Melancholy - The Weeknd</h3>
                 <p>R$ 59,99</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <br><br>
             <li><div class="product">
-                <img src="imagens/album6.jpg" alt="Disco 4">
+                <img src="{{'static', filename='imagens/album6.jpg' }}" alt="Disco 4">
                 <h3>Starboy - The Weeknd    </h3>
                 <p>R$ 78,90</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album13.jpg" alt="Disco 5">
+                <img src="{{'static', filename='imagens/album13.jpg' }}" alt="Disco 5">
                 <h3>Lost In Heaven - Chase Atlantic</h3>
                 <p>R$ 69,99</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album5.jpg" alt="Disco 6">
+                <img src="{{'static', filename='imagens/album5.jpg' }}" alt="Disco 6">
                 <h3>This Place Will Become Your Tomb - Sleep Token</h3>
                 <p>R$ 99,90</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <br><br>
             <li><div class="product">
-                <img src="imagens/album7.png" alt="Disco 7">
+                <img src="{{'static', filename='imagens/album7.png' }}" alt="Disco 7">
                 <h3>Blackout - Scorpions    </h3>
                 <p>R$ 89,90</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album9.jpg" alt="Disco 8">
+                <img src="{{'static', filename='imagens/album9.jpg' }}" alt="Disco 8">
                 <h3>Bitches Brew - Miles Davis</h3>
                 <p>R$ 110,00</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album10.png" alt="Disco 9">
+                <img src="{{'static', filename='imagens/album10.png' }}" alt="Disco 9">
                 <h3>Mothership - Led Zepellin</h3>
                 <p>R$ 59,99</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <br><br>
             <li><div class="product">
-                <img src="imagens/album12.jpg" alt="Disco 10">
+                <img src="{{'static', filename='imagens/album12.jpg' }}" alt="Disco 10">
                 <h3>Greatest Hits - Led Zepellin</h3>
                 <p>R$ 79,99</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album8.jpg" alt="Disco 11">
+                <img src="{{'static', filename='imagens/album8.jpg' }}" alt="Disco 11">
                 <h3>Beauty In Death - Chase Atlantic</h3>
                 <p>R$ 80,00</p>
                 <button>Adicionar ao Carrinho</button>
             </div></li>
             <li><div class="product">
-                <img src="imagens/album11.png" alt="Disco 12">
+                <img src="{{'static', filename='imagens/album11.png' }}" alt="Disco 12">
                 <h3>Kind of Blue - Miles Davis</h3>
                 <p>R$ 99,90</p>
                 <button>Adicionar ao Carrinho</button>
