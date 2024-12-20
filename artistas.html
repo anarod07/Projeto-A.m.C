@@ -8,9 +8,9 @@
     <!--T´tiulo da aba de navegação-->
     <title>Artistas</title>
     <!--Link da página de estilo CSS para estilizar a página HTML-->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="subpages.css">
-    <link rel="stylesheet" href="artistas.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/subpages.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/artistas.css') }}">
 </head>
 <body>
     <!--Cabeçalho da página-->
@@ -18,16 +18,16 @@
         <!--Menu superior-->
         <nav>
             <div class="logo">
-                <a href="home.html">
-                <img src="imagens/logo.png" alt="logo" class="logo" width="150" height="150">
+                <a href="{{ url_for ('home.html') }}">
+                    <img src="{{'static', filename='imagens/logo.png' }}" alt="logo" class="logo" width="150" height="150">
                 </a>
             </div>
             <ul>
                 <!--Links de direcionamento para outras páginas-->
-                <li><a href="#"><img src="imagens/twitter.png" width="57" height="57"></a></li></li>
-                <li><a href="#"><img src="imagens/facebook.png" width="50" height="50"></a></li></li>
-                <li><a href="#"><img src="imagens/instagram.png" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
-                <li><a href="#"><img src="imagens/pinterest.png" width="54" height="54"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/twitter.png' }}" width="57" height="57"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/facebook.png' }}" width="50" height="50"></a></li></li>
+                <li><a href="#"><img src="{{'static', filename='imagens/instagram.png' }}" width="50" height="50"></a></li></li><!--Link para a página do carrinho de compras-->
+                <li><a href="#"><img src="{{'static', filename='imagens/pinterest.png' }}" width="54" height="54"></a></li></li>
             </ul>
         </nav>
     </header>
@@ -35,10 +35,10 @@
     <div class="menu">
         <nav>
         <ul>
-            <a href="about.html">Quem somos</a>
+            <a href="{{ url_for ('sobre') }}">Quem somos</a>
             <a href="#contato">Contato</a>
-            <a href="login.html"><img src="imagens/login.png" width="27" height="27"></a>
-            <a href="#"><img src="imagens/compra.png" width="27" height="27"></a>
+            <a href="{{ url_for ('login') }}"><img src="{{'static', filename='imagens/login.png' }}" width="27" height="27"></a>
+            <a href="#"><img src="{{'static', filename='imagens/compra.png' }}" width="27" height="27"></a>
         </ul>
     </nav>
    </div>
@@ -51,42 +51,41 @@
 
    <div class="container">
         <div class="product">
-            <img src="imagens/the-weeknd.jpg" alt="Artista 1">
+            <img src="{{'static', filename='imagens/the-weeknd.jpg' }}" alt="Artista 1">
             <h3>The Weeknd</h3>
         </div>
 
         <br><br><br>
 
         <div class="product">
-            <img src="imagens/sleep-token.jpg" alt="Artista 2">
+            <img src="{{'static', filename='imagens/sleep-token.jpg' }}" alt="Artista 2">
             <h3>Sleep Token</h3>
         </div>
 
         <br><br><br>
 
         <div class="product">
-            <img src="imagens/miles-davis.jpg" alt="Artista 3">
+            <img src="{{'static', filename='imagens/miles.davis.jpg' }}" alt="Artista 3">
             <h3>Miles Davis</h3>
         </div>
 
         <br><br><br>
 
         <div class="product">
-            <img src="imagens/scorpions.jpg" alt="Artista 4">
+            <img src="{{'static', filename='imagens/scorpions.jpg' }}" alt="Artista 4">
             <h3>Scorpions</h3>
         </div>
 
         <br><br><br>
-
-        <div class="product">
-            <img src="imagens/chase-atlantic.jpg" alt="Artista 5">
+       <div class="product">
+            <img src="{{'static', filename='imagens/chase-atlantic.jpg' }}" alt="Artista 5">
             <h3>Chase Atlantic</h3>
         </div>
 
         <br><br><br>
 
         <div class="product">
-            <img src="imagens/led-zeppelin.jpg" alt="Artista 6">
+            <img src="{{'static', filename='imagens/led-zeppelin.jpg' }}" alt="Artista 6">
             <h3>Led Zeppelin</h3>
     </div>
    </div>
