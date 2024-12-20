@@ -1,0 +1,213 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #3c3b39;
+}
+
+header {
+    background-color: #4a1203;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;}
+
+.menu {
+    background-color: #361102;
+    color: #fff;
+    padding: 10px 20px;
+    height: 50px;
+}
+
+.menu a{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.menu a:hover {
+    color: #a22e0b;
+}
+
+.menu-lateral {
+    width: 200px;
+    height: 68vh;
+    position: relative;
+    background-color: #361102;
+    color: #fff;
+    padding: 20px;
+}
+
+.menu-lateral h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu-lateral ul{
+    list-style: none;
+    padding: 0;
+}
+
+.menu-lateral li a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease;
+}
+
+.menu-lateral ul li a:hover{
+    color: #a22e0b;
+}
+
+.main-content .div{
+    margin-left: 200px; /* Deixa o conteúdo principal ao lado do menu */
+    padding: 20px;
+    width: calc(100% - 200px); /* Preenche o restante da tela */
+  }
+
+/* Layout da lista de produtos */
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-gap: 20px;
+    padding: 0;
+    margin: 100px;
+    list-style: none;
+    max-width: 100px;
+}
+
+.product {
+    background-color:#54524f;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px #4a1203a5;
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.product img {
+    width: 100%; /* Faz a imagem ocupar toda a largura da div */
+    height: 200px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem distorção (pode cortar) */
+}
+
+.product h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.product button {
+    background-color: #a22e0b;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.product button:hover {
+    background-color: #4a1203;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4a1203;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .nav {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    margin-top: 20px; /* Espaço para o menu fixo */
+    padding: 50px 20px;
+    background-color: #3c3b39;
+    color: #ffffff;
+    ;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Texto */
+.text {
+    background-color: #54524f; /* Fundo */
+    color: #ffffff; /* Cor de texto suave e fácil de ler */
+    padding: 30px; /* Mais espaço ao redor do texto */
+    margin: 30px auto; /* Espaçamento ao redor do bloco */
+    width: 100%; /* Controla a largura para não ocupar toda a tela */
+    border-radius: 20px; /* Bordas arredondadas para um visual mais suave */
+    box-shadow: 0 4px 8px #4a1203a5; /* Sombra leve para dar profundidade */
+    font-family: 'Arial', sans-serif; /* Fonte amigável e fácil de ler */
+    font-size: 18px; /* Tamanho de fonte confortável */
+    line-height: 1.8; /* Aumenta o espaçamento entre as linhas */
+    text-align: justify; /* Justifica o texto para uma leitura equilibrada */
+    max-width: 900px; /* Limita a largura para um bom tamanho de leitura */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section .ofertas .h1{
+    color:#ffffff;
+}
